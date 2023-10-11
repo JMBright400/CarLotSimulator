@@ -8,7 +8,7 @@ namespace CarLotSimulator
         {
             var carLot = new CarLot();
 
-
+            Console.WriteLine($"Current number of vehicles: {CarLot._numberOfCars}");
 
             var ford = new Car();
             ford.Make = "Ford";
@@ -18,7 +18,8 @@ namespace CarLotSimulator
             ford.HonkNoise = "honk";
             ford.IsDriveable = true;
 
-           carLot.DealerShip.Add(ford);
+            Console.WriteLine($"Current number of vehicles: {CarLot._numberOfCars}");
+            carLot.DealerShip.Add(ford);
 
             var chevy = new Car()
             {
@@ -29,12 +30,13 @@ namespace CarLotSimulator
                 HonkNoise = "beep",
                 IsDriveable = false
             };
-
-           carLot.DealerShip.Add(chevy);
+            Console.WriteLine($"Current number of vehicles: {CarLot._numberOfCars}");
+            carLot.DealerShip.Add(chevy);
 
             var lotus = new Car(2021, "Lotus", "Evora GT", "roar", "honk honk", true);
 
-           carLot.DealerShip.Add(lotus);
+            Console.WriteLine($"Current number of vehicles: {CarLot._numberOfCars}");
+            carLot.DealerShip.Add(lotus);
    
 
 
